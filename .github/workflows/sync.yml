@@ -1,0 +1,36 @@
+name: Garmin Sync Diário
+
+on:
+  schedule:
+    - cron: '0 10 * * *'   # Todo dia às 07:00 horário de Brasília (10:00 UTC)
+  workflow_dispatch:         # Permite rodar manualmente pelo site do GitHub
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Instalar dependências
+        run: pip install garminconnect curl_cffi
+
+      - name: Rodar sync do Garmin
+        env:
+          GARMIN_EMAIL:    ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+        run: python garmin_sync.py
+
+      - name: Salvar JSON no repositório
+        run: |
+          git config user.name  "Garmin Bot"
+          git config user.email "bot@garmin-sync"
+          git add garmin_dados_atuais.json
+          git diff --cached --quiet || git commit -m "Sync Garmin $(date +'%Y-%m-%d')"
+          git push
