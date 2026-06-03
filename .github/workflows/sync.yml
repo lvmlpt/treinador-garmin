@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Baixar repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Instalar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.6.0
         with:
           python-version: '3.13'
 
@@ -35,6 +35,6 @@ jobs:
         run: |
           git config user.name  "Garmin Bot"
           git config user.email "bot@garmin-sync"
-          git add garmin_dados_atuais.json
+          git add garmin_dados_atuais.json garmin_resumo.json
           git diff --cached --quiet || git commit -m "Sync Garmin $(date +'%Y-%m-%d')"
           git push
