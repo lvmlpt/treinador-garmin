@@ -154,8 +154,9 @@ if __name__ == "__main__":
     stats = dados.get("estatisticas_hoje") or {}
     if stats:
         print(f"\n📈 Resumo de hoje ({date.today().isoformat()}):")
-        print(f"   Passos:           {stats.get('totalSteps', 'n/d'):,}")
+        passos = stats.get('totalSteps')
+        print(f"   Passos:           {passos:,}" if passos else "   Passos:           n/d")
         print(f"   Calorias ativas:  {stats.get('activeKilocalories', 'n/d')} kcal")
         print(f"   FC repouso:       {stats.get('restingHeartRate', 'n/d')} bpm")
         print(f"   Stress médio:     {stats.get('averageStressLevel', 'n/d')}")
-        print(f"   Horas de pé:      {stats.get('floorsAscended', 'n/d')}")
+        print(f"   Horas de pe:      {stats.get('floorsAscended', 'n/d')}")
