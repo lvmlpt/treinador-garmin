@@ -35,8 +35,6 @@ jobs:
         run: |
           git config user.name  "Garmin Bot"
           git config user.email "bot@garmin-sync"
-          git fetch origin main
-          git reset --soft origin/main
           git add garmin_dados_atuais.json garmin_resumo.json
           git diff --cached --quiet || git commit -m "Sync Garmin $(date +'%Y-%m-%d %H:%M')"
-          git push origin main
+          git push origin main --force
