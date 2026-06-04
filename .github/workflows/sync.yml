@@ -2,8 +2,8 @@ name: Garmin Sync Diário
 
 on:
   schedule:
-    - cron: '0 10 * * *'   # Todo dia às 07:00 horário de Brasília (10:00 UTC)
-  workflow_dispatch:         # Permite rodar manualmente pelo site do GitHub
+    - cron: '0 10 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -47,18 +47,13 @@ jobs:
               'User-Agent':    'garmin-sync'
           }
 
-          # Salva garmin_resumo.json (pequeno) e garmin_dados_atuais.json (completo)
           for filename in ['garmin_resumo.json', 'garmin_dados_atuais.json']:
               if not os.path.exists(filename):
-                  print(f'⚠️  {filename} nao encontrado, pulando.')
+                  print(f'Arquivo {filename} nao encontrado.')
                   continue
-
               with open(filename, 'rb') as f:
                   content = base64.b64encode(f.read()).decode()
-
               url = f'https://api.github.com/repos/{repo}/contents/{filename}'
-
-              # Busca SHA atual (necessario para atualizar arquivo existente)
               sha = None
               try:
                   req = urllib.request.Request(url, headers=headers)
@@ -66,21 +61,14 @@ jobs:
                       sha = json.loads(resp.read().decode()).get('sha')
               except urllib.error.HTTPError as e:
                   if e.code != 404:
-                      print(f'Aviso ao buscar SHA de {filename}: {e}')
-
+                      print(f'Aviso: {e}')
               data = {'message': f'Sync Garmin {filename}', 'content': content}
               if sha:
                   data['sha'] = sha
-
-              req = urllib.request.Request(
-                  url,
-                  data=json.dumps(data).encode(),
-                  method='PUT',
-                  headers=headers
-              )
+              req = urllib.request.Request(url, data=json.dumps(data).encode(), method='PUT', headers=headers)
               try:
                   with urllib.request.urlopen(req) as resp:
-                      print(f'✅ {filename} salvo no GitHub')
+                      print(f'OK: {filename} salvo')
               except urllib.error.HTTPError as e:
-                  print(f'❌ Erro ao salvar {filename}: {e.read().decode()}')
+                  print(f'Erro: {filename} - {e.read().decode()}')
           EOF
