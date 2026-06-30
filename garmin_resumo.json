@@ -1,61 +1,61 @@
 {
-  "sincronizado_em": "2026-06-29",
+  "sincronizado_em": "2026-06-30",
   "periodo": {
-    "inicio": "2026-05-30",
-    "fim": "2026-06-29"
+    "inicio": "2026-05-31",
+    "fim": "2026-06-30"
   },
   "saude_hoje": {
-    "fc_repouso": 59,
-    "stress_medio": 33,
-    "stress_max": 84,
-    "passos": 4321,
-    "calorias_ativas": 247.0,
-    "calorias_totais": 1451.0,
-    "body_battery_carregado": 31,
-    "body_battery_gasto": 18,
-    "minutos_moderados": 31,
+    "fc_repouso": 56,
+    "stress_medio": 25,
+    "stress_max": 87,
+    "passos": 2337,
+    "calorias_ativas": 36.0,
+    "calorias_totais": 1044.0,
+    "body_battery_carregado": 44,
+    "body_battery_gasto": 13,
+    "minutos_moderados": 0,
     "minutos_vigorosos": 0,
-    "hidratacao_ml": 0.0
+    "hidratacao_ml": null
   },
   "saude_ontem": {
     "fc_repouso": 59,
-    "stress_medio": 42,
-    "passos": 24125,
-    "calorias_ativas": 1284.0,
-    "body_battery_carregado": 41,
-    "body_battery_gasto": 58
+    "stress_medio": 37,
+    "passos": 6593,
+    "calorias_ativas": 295.0,
+    "body_battery_carregado": 31,
+    "body_battery_gasto": 31
   },
   "sono": {
-    "data": "2026-06-28",
-    "duracao_total_min": 422,
-    "profundo_min": 94,
-    "rem_min": 87,
-    "leve_min": 241,
-    "acordado_min": 28,
-    "numero_despertares": 2,
-    "score_geral": 80,
-    "score_classificacao": "GOOD",
-    "rem_percentual": 21,
-    "duracao_classificacao": "EXCELLENT",
+    "data": "2026-06-29",
+    "duracao_total_min": 290,
+    "profundo_min": 61,
+    "rem_min": 48,
+    "leve_min": 181,
+    "acordado_min": 12,
+    "numero_despertares": 0,
+    "score_geral": 67,
+    "score_classificacao": "FAIR",
+    "rem_percentual": 17,
+    "duracao_classificacao": "POOR",
     "stress_sono_classificacao": "FAIR",
-    "spo2_media": 96.0,
-    "spo2_minima": 83,
+    "spo2_media": 98.0,
+    "spo2_minima": 92,
     "spo2_maxima": 100,
     "respiracao_media": 16.0,
-    "stress_medio_sono": 23.0,
-    "fc_media_sono": 65.0,
+    "stress_medio_sono": 24.0,
+    "fc_media_sono": 64.0,
     "hrv_noturno": null,
     "hrv_status": null,
-    "feedback": "POSITIVE_LONG_AND_DEEP"
+    "feedback": "POSITIVE_SHORT_BUT_DEEP"
   },
   "sono_semana_anterior": {
-    "data": "2026-06-22",
-    "duracao_total_min": 439,
-    "score_geral": 90,
-    "spo2_minima": 85
+    "data": "2026-06-23",
+    "duracao_total_min": 443,
+    "score_geral": 83,
+    "spo2_minima": 83
   },
   "prontidao_treino": {
-    "score": 2,
+    "score": 5,
     "nivel": "POOR",
     "recomendacao": "LET_YOUR_BODY_RECOVER",
     "detalhe": "POOR_RT_HIGH_SS_GOOD_OR_MOD",
@@ -64,9 +64,9 @@
     "fator_recuperacao": "POOR",
     "fator_carga": "GOOD",
     "fator_stress": "MODERATE",
-    "hrv_semanal": 38,
-    "carga_aguda": 723,
-    "recuperacao_necessaria_min": 5122
+    "hrv_semanal": 39,
+    "carga_aguda": 625,
+    "recuperacao_necessaria_min": 3670
   },
   "composicao_corporal": {
     "peso_kg": 76.5,
