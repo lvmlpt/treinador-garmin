@@ -1,8 +1,8 @@
 {
-  "sincronizado_em": "2026-08-22",
+  "sincronizado_em": "2026-08-23",
   "periodo": {
-    "inicio": "2026-07-23",
-    "fim": "2026-08-22"
+    "inicio": "2026-07-24",
+    "fim": "2026-08-23"
   },
   "saude_hoje": {
     "fc_repouso": null,
@@ -26,7 +26,7 @@
     "body_battery_gasto": null
   },
   "sono": {
-    "data": "2026-08-21",
+    "data": "2026-08-22",
     "duracao_total_min": 0,
     "profundo_min": 0,
     "rem_min": 0,
@@ -49,10 +49,10 @@
     "feedback": null
   },
   "sono_semana_anterior": {
-    "data": "2026-08-15",
-    "duracao_total_min": 314,
-    "score_geral": 65,
-    "spo2_minima": 89
+    "data": "2026-08-16",
+    "duracao_total_min": 605,
+    "score_geral": 79,
+    "spo2_minima": 88
   },
   "prontidao_treino": {
     "score": null,
@@ -69,8 +69,8 @@
     "recuperacao_necessaria_min": null
   },
   "composicao_corporal": {
-    "peso_kg": 75.2,
-    "data_peso": "2026-07-23",
+    "peso_kg": 75.7,
+    "data_peso": "2026-07-24",
     "gordura_percentual": null,
     "massa_muscular_kg": null
   },
