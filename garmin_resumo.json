@@ -1,8 +1,8 @@
 {
-  "sincronizado_em": "2026-08-26",
+  "sincronizado_em": "2026-08-27",
   "periodo": {
-    "inicio": "2026-07-27",
-    "fim": "2026-08-26"
+    "inicio": "2026-07-28",
+    "fim": "2026-08-27"
   },
   "saude_hoje": {
     "fc_repouso": null,
@@ -18,41 +18,41 @@
     "hidratacao_ml": null
   },
   "saude_ontem": {
-    "fc_repouso": 57,
-    "stress_medio": 32,
-    "passos": 4263,
-    "calorias_ativas": 79.0,
-    "body_battery_carregado": 38,
-    "body_battery_gasto": 21
+    "fc_repouso": null,
+    "stress_medio": null,
+    "passos": null,
+    "calorias_ativas": null,
+    "body_battery_carregado": null,
+    "body_battery_gasto": null
   },
   "sono": {
-    "data": "2026-08-25",
-    "duracao_total_min": 448,
-    "profundo_min": 64,
-    "rem_min": 101,
-    "leve_min": 283,
-    "acordado_min": 27,
-    "numero_despertares": 1,
-    "score_geral": 78,
-    "score_classificacao": "FAIR",
-    "rem_percentual": 23,
-    "duracao_classificacao": "EXCELLENT",
-    "stress_sono_classificacao": "FAIR",
-    "spo2_media": 97.0,
-    "spo2_minima": 89,
-    "spo2_maxima": 100,
-    "respiracao_media": 15.0,
-    "stress_medio_sono": 25.0,
-    "fc_media_sono": 61.0,
+    "data": "2026-08-26",
+    "duracao_total_min": 0,
+    "profundo_min": 0,
+    "rem_min": 0,
+    "leve_min": 0,
+    "acordado_min": 0,
+    "numero_despertares": null,
+    "score_geral": null,
+    "score_classificacao": null,
+    "rem_percentual": null,
+    "duracao_classificacao": null,
+    "stress_sono_classificacao": null,
+    "spo2_media": null,
+    "spo2_minima": null,
+    "spo2_maxima": null,
+    "respiracao_media": null,
+    "stress_medio_sono": null,
+    "fc_media_sono": null,
     "hrv_noturno": null,
     "hrv_status": null,
-    "feedback": "POSITIVE_LONG_AND_REFRESHING"
+    "feedback": null
   },
   "sono_semana_anterior": {
-    "data": "2026-08-19",
-    "duracao_total_min": 346,
-    "score_geral": 72,
-    "spo2_minima": 89
+    "data": "2026-08-20",
+    "duracao_total_min": 508,
+    "score_geral": 83,
+    "spo2_minima": 78
   },
   "prontidao_treino": {
     "score": null,
@@ -69,8 +69,8 @@
     "recuperacao_necessaria_min": null
   },
   "composicao_corporal": {
-    "peso_kg": 75.2,
-    "data_peso": "2026-07-27",
+    "peso_kg": 75.4,
+    "data_peso": "2026-07-28",
     "gordura_percentual": null,
     "massa_muscular_kg": null
   },
