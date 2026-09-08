@@ -1,8 +1,8 @@
 {
-  "sincronizado_em": "2026-09-07",
+  "sincronizado_em": "2026-09-08",
   "periodo": {
-    "inicio": "2026-08-08",
-    "fim": "2026-09-07"
+    "inicio": "2026-08-09",
+    "fim": "2026-09-08"
   },
   "saude_hoje": {
     "fc_repouso": null,
@@ -18,41 +18,41 @@
     "hidratacao_ml": null
   },
   "saude_ontem": {
-    "fc_repouso": 62,
-    "stress_medio": 43,
-    "passos": 16110,
-    "calorias_ativas": 540.0,
-    "body_battery_carregado": 22,
-    "body_battery_gasto": 29
+    "fc_repouso": null,
+    "stress_medio": null,
+    "passos": null,
+    "calorias_ativas": null,
+    "body_battery_carregado": null,
+    "body_battery_gasto": null
   },
   "sono": {
-    "data": "2026-09-06",
-    "duracao_total_min": 524,
-    "profundo_min": 57,
-    "rem_min": 107,
-    "leve_min": 360,
-    "acordado_min": 33,
-    "numero_despertares": 3,
-    "score_geral": 64,
-    "score_classificacao": "FAIR",
-    "rem_percentual": 20,
-    "duracao_classificacao": "EXCELLENT",
-    "stress_sono_classificacao": "POOR",
-    "spo2_media": 95.0,
-    "spo2_minima": 83,
-    "spo2_maxima": 100,
-    "respiracao_media": 17.0,
-    "stress_medio_sono": 34.0,
-    "fc_media_sono": 66.0,
+    "data": "2026-09-07",
+    "duracao_total_min": 0,
+    "profundo_min": 0,
+    "rem_min": 0,
+    "leve_min": 0,
+    "acordado_min": 0,
+    "numero_despertares": null,
+    "score_geral": null,
+    "score_classificacao": null,
+    "rem_percentual": null,
+    "duracao_classificacao": null,
+    "stress_sono_classificacao": null,
+    "spo2_media": null,
+    "spo2_minima": null,
+    "spo2_maxima": null,
+    "respiracao_media": null,
+    "stress_medio_sono": null,
+    "fc_media_sono": null,
     "hrv_noturno": null,
     "hrv_status": null,
-    "feedback": "NEGATIVE_LONG_BUT_NOT_RESTORATIVE"
+    "feedback": null
   },
   "sono_semana_anterior": {
-    "data": "2026-08-31",
-    "duracao_total_min": 354,
-    "score_geral": 66,
-    "spo2_minima": 85
+    "data": "2026-09-01",
+    "duracao_total_min": 345,
+    "score_geral": 54,
+    "spo2_minima": 80
   },
   "prontidao_treino": {
     "score": null,
@@ -69,19 +69,19 @@
     "recuperacao_necessaria_min": null
   },
   "composicao_corporal": {
-    "peso_kg": 75.8,
-    "data_peso": "2026-08-08",
+    "peso_kg": 75.9,
+    "data_peso": "2026-08-09",
     "gordura_percentual": null,
     "massa_muscular_kg": null
   },
   "fitness": {
     "vo2max": 48.0,
-    "fitness_age": 36.64083848212273,
+    "fitness_age": 37.3987856828122,
     "fitness_age_cronologica": 44,
     "fc_repouso_historico": 56,
-    "dias_vigorosos_media": 3.0,
-    "minutos_vigorosos_media": 146.8,
-    "gordura_percentual_fitness": 17.8,
+    "dias_vigorosos_media": 2.8,
+    "minutos_vigorosos_media": 136.6,
+    "gordura_percentual_fitness": 17.9,
     "fc_limiar": 171,
     "ftp": null
   },
